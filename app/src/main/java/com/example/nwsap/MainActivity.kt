@@ -13,21 +13,28 @@ import com.android.volley.AuthFailureError
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 
+
+
+
+//016d829068144dc1b48c59bc9bc25329
 class MainActivity : AppCompatActivity(), NewsItemClicked {
 
     private lateinit var mAdapter: NewsAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
         val rv = findViewById<RecyclerView>(R.id.list)
         rv.setHasFixedSize(true)
 
         rv.layoutManager = LinearLayoutManager(this)
-        // fetchData()
         fetchData2()
         mAdapter = NewsAdapter( this)
         rv.adapter = mAdapter
 
     }
+
     private fun fetchData2(){
 
         val url = "https://candidate-test-data-moengage.s3.amazonaws.com/Android/news-api-feed/staticResponse.json"
