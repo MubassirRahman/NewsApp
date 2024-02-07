@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NWSAP</string>
+    <string name="head_name">NEWS</string>
+    <string name="news_description">news_description</string>
+</resources>
