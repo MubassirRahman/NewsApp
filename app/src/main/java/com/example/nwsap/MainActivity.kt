@@ -16,7 +16,7 @@ import com.android.volley.toolbox.JsonObjectRequest
 
 
 
-//016d829068144dc1b48c59bc9bc25329
+
 class MainActivity : AppCompatActivity(), NewsItemClicked {
 
     private lateinit var mAdapter: NewsAdapter
